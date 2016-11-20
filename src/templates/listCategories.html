@@ -1,0 +1,16 @@
+<div class="categories" ng-repeat="categorie in $ctrl.datacategories">
+
+      <blockquote>
+        <a ui-sref="items({nameCategorie:categorie.short_name})" >
+        <p> {{categorie.short_name}}
+           <!-- <button class="btn btn-danger btn-sm" ng-click="categorie.onRemove({index: $index});">Don't want this one!</button> -->
+         </p>
+         <!-- <a ui-sref="items({nameCategorie:categorie.short_name})" > {{categorie.name}}</a> -->
+          <p> {{categorie.special_instructions }}</p>
+
+        <footer> {{categorie.url}}
+        </footer>
+        </a>
+      </blockquote>
+
+</div>
